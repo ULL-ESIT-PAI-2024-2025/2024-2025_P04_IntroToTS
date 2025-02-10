@@ -3,7 +3,7 @@
 
 ### Objetivos
 Los objetivos de esta práctica son:
-* Configurar el entorno de trabajo en la máquina virtual Linux de la asignatura para ejecutar programas en TypeScript.
+* Configurar el entorno de trabajo en la máquina virtual Linux de la asignatura para ejecutar programas en TypeScript (TS).
 * Ser capaz de desarrollar programas simples en TypeScript en el entorno Linux de la VM de la asignatura usando
   `ts-node`
 * Ser capaz de generar documentación para sus programas TypeScript utilizando
@@ -61,6 +61,8 @@ la implementación que TS realiza de este paradigma.
 
 El siguiente paso en esta práctica será que desarrolle Ud. en TypeScript todos los programas que haya realizado
 hasta ahora en JavaScript.
+En la evaluación de esta práctica se le pedirá que muestre la solución en TS a cualquiera de los problemas JS
+que se pedía realizar en prácticas anteriores.
 
 ### Ejercicios simples de TypeScript en Jutge
 Para los problemas de Jutge, resuélvalos en TS y valide la solución en Jutge subiendo a la plataforma el
@@ -91,6 +93,12 @@ una vez que haya realizdo algunos de los ejercicios catalogados como fáciles (*
 algunos de los de dificultad media o alta.
 Tenga en cuenta que por ahora no se le requerirá trabajar con ejercicios que conlleven programación orientada a objetos.
 
+Realice en TS al menos los siguientes ejercicios:
+1. [Word Count](https://exercism.org/tracks/typescript/exercises/word-count)
+2. [Leap](https://exercism.org/tracks/typescript/exercises/leap)
+3. [Atbash Cipher](https://exercism.org/tracks/typescript/exercises/atbash-cipher/iterations)
+4. [Collatz Conjecture](https://exercism.org/tracks/typescript/exercises/collatz-conjecture)
+
 Todos los ejercicios que realice en TS han de seguir los criterios de formato, estilo y documentación que
 se han estudiado hasta ahora.
 Para el caso de TS recuerde que existe una guía de estilo específica,
@@ -101,7 +109,7 @@ En cuanto a documentación de código se seguirán utilizando los mismos criteri
 se han estudiado.
 
 Recuerde que Exercism también utiliza Jest como plataforma de testing para los ejercicios de TS.
-Para cada problema, preste atención a los tests que su código ha de superar y la implementación de los mismos.
+Para cada problema, preste atención a los tests que su código ha de superar.
 
 ## TypeDoc
 [TypeDoc](https://typedoc.org/)
