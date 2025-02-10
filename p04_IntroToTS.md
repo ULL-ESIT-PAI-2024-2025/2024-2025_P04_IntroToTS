@@ -1,4 +1,4 @@
-# Práctica 4. Introducción a TypeScript. Unit testing con Jest.
+# Práctica 4. Introducción a TypeScript. Documentación con TypeDoc
 ### Factor de ponderación: 5
 
 ### Objetivos
@@ -6,8 +6,6 @@ Los objetivos de esta práctica son:
 * Configurar el entorno de trabajo en la máquina virtual Linux de la asignatura para ejecutar programas en TypeScript.
 * Ser capaz de desarrollar programas simples en TypeScript en el entorno Linux de la VM de la asignatura usando
   `ts-node`
-* Ser capaz de desarrollar y ejecutar test unitarios utilizando
-  [Jest](https://jestjs.io/)
 * Ser capaz de generar documentación para sus programas TypeScript utilizando
   [TypeDoc](https://typedoc.org/)
   y de visualizar dicha documentación en un servidor web
@@ -17,8 +15,6 @@ Se señalan a continuación los aspectos más relevantes (la lista no es exhaust
 que se tendrán en cuenta a la hora de evaluar esta práctica:
 * Se valorará la realización de las diferentes tareas que se proponen
 * El alumnado debe ser capaz de resolver problemas tanto en JS como en TS en la plataforma Exercism subiendo sus soluciones a la misma.
-* Ser capaz de desarrollar tests unitarios para sus programas utilizando
-  [Jest](https://jestjs.io/)
 * Acreditar que conoce la herramienta 
   [ESLint](https://eslint.org/)
 y que es capaz de trabajar con la misma en Visual Studio Code.
@@ -47,22 +43,32 @@ en fases más tempranas del desarrollo del software y no, por ejemplo, en tiempo
 software ya se encuentra en producción.
 
 Utilice como punto de partida para estudiar TypeScript el material del trabajo
-[Introduction to
-TypeScript](https://github.com/ULL-ESIT-PAI-2023-2024/2023-2024-pai-introduction-to-ts-introduction-to-ts.git)
-expuesto en las clases de la asignatura.
+[Introduction to TS](https://github.com/ULL-ESIT-PAI-2024-2025/2024-2025-pai-typescript-introduction-to-ts.git)
+expuesto en las clases de la asignatura y también el correspondiente al curso pasado:
+[Introduction to TypeScript](https://github.com/ULL-ESIT-PAI-2023-2024/2023-2024-pai-introduction-to-ts-introduction-to-ts.git)
+
 A continuación estudie las secciones 1 (*Getting Started*), 2 (*Basic Types*) y 4 (*Functions*) del
 [TypeScript Tutorial](https://www.typescripttutorial.net/)
 No deje de revisar la sección 3 (*Control Flow Statements*) del tutorial, aunque la sintaxis y semántica de las 
 sentencias de control en TS son las mismas que ya conoce de JS.
+
 En el aula virtual de PAI encontrará también las transparencias
-[TypeScript Functions](https://campusingenieriaytecnologia2324.ull.es/mod/url/view.php?id=5202)
+[TypeScript
+Functions](https://docs.google.com/presentation/d/1mj1uw-d3-2-V-wBjJ-M_2N1wScdZ0j73W318kJoL5WE/edit?usp=sharing)
 que debe estudiar.
 En el material anterior no es necesario que estudie, por ahora, nada relativo a programación orientada a objetos en
 la implementación que TS realiza de este paradigma.
 
 El siguiente paso en esta práctica será que desarrolle Ud. en TypeScript todos los programas que haya realizado
 hasta ahora en JavaScript.
-Para la ejecución de esos programas practique tanto a utilizar el compilador de TS (`tsc`)  como
+
+### Ejercicios simples de TypeScript en Jutge
+Para los problemas de Jutge, resuélvalos en TS y valide la solución en Jutge subiendo a la plataforma el
+fichero JavaScript resultado de la compilación con el compilador de TS.
+Para ello, su programa deberá estar preparado para recibir la entrada desde el flujo estándar de entrada
+(`stdin`).
+
+Para la ejecución de sus programas practique tanto a utilizar el compilador de TS (`tsc`)  como
 `ts-node`, el motor de ejecución de TS para Node.js.
 El el directorio principal de esta práctica hallará sendos ficheros
 `tsconfig.json` y `package.json` para trabajar con TS.
@@ -79,14 +85,14 @@ Modifique estos ficheros libremente, si le resulta conveniente.
 y realice en él todos los ejercicios que sea capaz, particularmente aquellos que ya haya realizado en JavaScript.
 Del mismo modo que hizo en JS, comience con los problemas más sencillos como **Hello World** o **Two Fer** y progrese
 en este itinerario tanto como le sea posible.
-De la 
+De la lista de 
 [Ejercicios de TypeScript en Exercism](https://exercism.org/tracks/typescript/exercises)
 una vez que haya realizdo algunos de los ejercicios catalogados como fáciles (*Easy*) preste atención a
 algunos de los de dificultad media o alta.
 Tenga en cuenta que por ahora no se le requerirá trabajar con ejercicios que conlleven programación orientada a objetos.
 
 Todos los ejercicios que realice en TS han de seguir los criterios de formato, estilo y documentación que
-se han venido estudiando hasta ahora.
+se han estudiado hasta ahora.
 Para el caso de TS recuerde que existe una guía de estilo específica,
 [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
 que para algunos aspectos concretos complementa a la guía de estilo para JS.
@@ -96,34 +102,6 @@ se han estudiado.
 
 Recuerde que Exercism también utiliza Jest como plataforma de testing para los ejercicios de TS.
 Para cada problema, preste atención a los tests que su código ha de superar y la implementación de los mismos.
-
-### Unit Testing con Jest
-Realice en TypeScript cada uno de los siguientes problemas de
-[Jutge](https://jutge.org/)
-haciendo que la entrada que requieran los programas que solucionan el problema se tome por línea de comandos.
-Para capturar los parámetros de línea de comando ejecutando el programa en `ts-node` pueden seguir usando
-`process.argv`
-
-Haga también que los programas incluyan documentación en formato JSDoc (TypeDoc). 
-Se propone desarrollar una página *índice* desde la que se enlacen las páginas de documentación de cada uno de
-estos programas.
-
-Desarrolle tests unitarios en 
-[Jest](https://jestjs.io/)
-para probar la corrección de cada una de las soluciones.
-Aparte de los tests públicos de Jutge, incluya al menos un test test adicional para comprobar situaciones que
-considere relevantes.
-Si su solución se basa en varias funciones, desarrolle tests para cada una de ellas.
-
-1. [P34279](https://jutge.org/problems/P34279) Add one Second.
-2. [P51126](https://jutge.org/problems/P51126) Intervals (I)
-3. [P33839](https://jutge.org/problems/P33839) Sum of Digits. Para este problema, simplifique la salida de
-modo que ésta se limite a un único número (la suma de los dígitos).
-4. [P80660](https://jutge.org/problems/P80660) The sequence of Collatz
-5. [P91173](https://jutge.org/problems/P91173_en) Collatz pseudo-sequences (1)
-6. [P11916](https://jutge.org/problems/P11916_en) Approximation of e. Simplifique la salida del programa para
-que se limite a un solo número en punto flotante (el valor de e).
-7. [P76024](https://jutge.org/problems/P76024_en) Sum of fractions
 
 ## TypeDoc
 [TypeDoc](https://typedoc.org/)
@@ -148,11 +126,12 @@ y/o el
 
 Para los problemas 
 
-4. [P80660](https://jutge.org/problems/P80660) The sequence of Collatz
-5. [P91173](https://jutge.org/problems/P91173_en) Collatz pseudo-sequences (1)
-7. [P76024](https://jutge.org/problems/P76024_en) Sum of fractions
+1. [P80660](https://jutge.org/problems/P80660) The sequence of Collatz
+2. [P91173](https://jutge.org/problems/P91173_en) Collatz pseudo-sequences (1)
+3. [P76024](https://jutge.org/problems/P76024_en) Sum of fractions
 
-del apartado anterior, genere con TypeDoc la documentación en formato HTML para cada uno de estos programas y haga que dicha documentación 
+resuélvalos en TS subiendo la solución a la plataforma Jutge y 
+genere con TypeDoc la documentación en formato HTML para cada uno de estos programas y haga que dicha documentación 
 sea accesible a través de un servidor web en su máquina virtual de la asignatura.
 
 ## Referencias
@@ -166,6 +145,5 @@ sea accesible a través de un servidor web en su máquina virtual de la asignatu
 * [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
 * [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
 * [Jutge web site](https://jutge.org/)
-* [Jest](https://jestjs.io/)
 * [ESLint](https://eslint.org/)
 * [JSDoc](https://jsdoc.app/)
