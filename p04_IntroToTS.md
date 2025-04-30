@@ -132,6 +132,10 @@ del profesor
 y/o el
 [TypeDoc Tutorial](https://cancerberosgx.github.io/javascript-documentation-examples/examples/typedoc-tutorial-basic/docs/docco/src/index.html#:~:text=TypeDoc%20is%20an%20API%20documentation,HTML%20documentation%20website%20for%20you.)
 
+Es muy conveniente que el fichero `README.md` sea la primera página de su documentación generada con TypeDoc.
+En ese fichero es común incluir información relevante para el proyecto que se desarrolla: autor, finalidad,
+instrucciones de compilación y despliegue, etc.
+
 Para los problemas 
 
 1. [P80660](https://jutge.org/problems/P80660) The sequence of Collatz
